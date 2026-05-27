@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* fonts */
+  --font: "EB Garamond";
+  /* colors */
+  --beige: #f3c395ff;
+  --pink: #fbb6ce;
+  --lightblue: #d6bcfa;
+  --violet: #757bbd;
+  --White: #f8f2edff;
+  --second-White: #ffffff;
+  --black: #000000;
+  --darkGreen: #055346ff;
+  --lightGreen: #9ae6b4;
+  --lightGrey: #353535bd;
+  --darkGrey: #353535ff;
+  --orange: #f6ad55;
+  --yellow: #faf089;
+  --red: #e93d3d;
+  /* background */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--font), sans-serif;
+}
+/* Header */
+header {
+  background-color: var(--second-White);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 30px;
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.logo {
+  margin-left: 17rem;
+  width: 180px;
+  height: auto;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-right: 15rem;
+}
+.nav-list a {
+  color: var(--darkGreen);
+  font-size: 17px;
+  font-weight: 500;
+}
+/* Hero Section */
+main {
+  width: 100%;
+}
+
+#hero {
+  width: 100%;
+  min-height: 450px;
+  background-image: url("./imgs/hero_salon_tranquilo_2.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border-bottom-left-radius: 80px;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 38%;
+  z-index: 2;
+}
+.hero-info h1 {
+  font-size: 65px;
+  font-weight: 500;
+  min-width: 500px;
+  color: var(--White);
+  background-clip: text;
+}
+.hero-info p {
+  font-size: 16px;
+  color: var(--second-White);
+  text-align: center;
+  padding: 0 5rem;
+  font-weight: 400;
+}
+.hero-info a {
+  font-family: "montserrat";
+  color: var(--darkGreen);
+  background-color: var(--beige);
+  padding: 13px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Section Nosotros */
+#nosotros {
+  padding: 70px 60px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+.img-nos {
+  width: 50%;
+  flex-shrink: 0;
+}
+.img-nos img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 40% 0 50%;
+  object-fit: cover;
+}
+.text-nos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.text-nos h2 {
+  font-size: 30px;
+  color: var(--beige);
+}
+.text-nos h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--darkGreen);
+}
+.text-nos p {
+  font-size: 17px;
+  color: var(--lightGrey);
+  font-style: italic;
+  line-height: 2;
+}
