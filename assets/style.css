@@ -5,7 +5,7 @@
   --font: "EB Garamond";
   /* colors */
   --beige: #f3c395ff;
-  --pink: #fbb6ce;
+  --pink: #f8eff2;
   --lightblue: #d6bcfa;
   --violet: #757bbd;
   --White: #f8f2edff;
@@ -28,6 +28,7 @@
   list-style: none;
   font-family: var(--font), sans-serif;
 }
+
 /* Header */
 header {
   background-color: var(--second-White);
@@ -157,4 +158,89 @@ main {
   color: var(--lightGrey);
   font-style: italic;
   line-height: 2;
+}
+/* Servicios Section */
+#servicios {
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1050px;
+}
+.grid-servicios img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+.titulo-servicios h1 {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--darkGreen);
+}
+/* Descripcion Section */
+.descripcion {
+  padding: 70px 0;
+  background-color: var(--pink);
+}
+.descripction-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.text-descrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.text-descrip h1 {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--darkGreen);
+}
+.text-descrip p {
+  font-size: 16px;
+  color: var(--lightGrey);
+  text-align: center;
+  padding: 0 5rem;
+  font-weight: 600;
+}
+.cards-descrip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 82px;
+}
+.card-norm {
+  background-color: var(--second-White);
+  padding: 30px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.cards-descrip img {
+  width: 140px;
+  height: auto;
+}
+.cards-descrip h2 {
+  font-size: 25px;
+  color: var(--darkGreen);
+  text-align: center;
+  padding: 0 30px;
+  font-weight: 500;
 }
