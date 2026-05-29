@@ -244,3 +244,131 @@ main {
   padding: 0 30px;
   font-weight: 500;
 }
+#Salones {
+  padding: 70px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.text-salones {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.text-salones h1 {
+  width: 50%;
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--darkGreen);
+}
+.text-salones p {
+  width: 50%;
+  font-size: 16px;
+  color: var(--lightGrey);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+}
+.card-salones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+}
+.salones-norm {
+  border: 1px solid var(--beige);
+  border-radius: 0px 45px;
+  padding: 30px 25px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-salones img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.galeria {
+  padding: 80px 0;
+  background-color: var(--pink);
+}
+.galeria-conteiner {
+  /* max-width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.galeria-conteiner h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--darkGreen);
+}
+.img-conteiner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1050px;
+}
+.img-conteiner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.img-conteiner img:nth-child(4) {
+  object-position: center top;
+}
+.ubicacion {
+  padding: 80px 0;
+  /* max-width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.ubicacion-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.ubicacion-conteiner h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--darkGreen);
+}
+.ubicacion-conteiner p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--darkGrey);
+}
+.ubicacion-conteiner p span {
+  font-weight: bold;
+}
+
+.ubicacion-conteiner a {
+  color: var(--second-White);
+  background-color: var(--darkGreen);
+  padding: 13px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
