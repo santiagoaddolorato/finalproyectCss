@@ -118,7 +118,7 @@ main {
   font-weight: 500;
 }
 /* Section Nosotros */
-#nosotros {
+#Nosotros {
   padding: 70px 60px;
   max-width: 1200px;
   display: flex;
@@ -160,7 +160,7 @@ main {
   line-height: 2;
 }
 /* Servicios Section */
-#servicios {
+#Servicios {
   padding: 40px 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -371,4 +371,65 @@ main {
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
+}
+#Contacto {
+  padding: 70px 0;
+  background: var(--darkGreen);
+}
+.contacto-conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contacto-conteiner h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--second-White);
+}
+.card-conteiner {
+  background-color: var(--second-White);
+  padding: 40px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.first-card-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.card-conteiner img {
+  width: 250px;
+  height: auto;
+}
+.first-card-conteiner p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.second-card-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+}
+.second-card-conteiner label,
+.second-card-conteiner input,
+.second-card-conteiner select {
+  display: block;
+  width: 100%;
+}
+.second-card-conteiner label {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 0px;
 }
