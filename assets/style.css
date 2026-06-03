@@ -13,6 +13,7 @@
   --black: #000000;
   --darkGreen: #055346ff;
   --lightGreen: #9ae6b4;
+  --morelightGrey: #8d8888;
   --lightGrey: #353535bd;
   --darkGrey: #353535ff;
   --orange: #f6ad55;
@@ -35,29 +36,30 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 30px;
-  height: 120px;
+  padding: 10 30px;
+  height: 135px;
   position: fixed;
   width: 100%;
   position: relative;
   z-index: 10;
 }
 .logo {
-  margin-left: 17rem;
-  width: 180px;
+  margin-left: 12rem;
+  width: 195px;
   height: auto;
 }
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   margin-right: 15rem;
 }
 .nav-list a {
   color: var(--darkGreen);
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 /* Hero Section */
 main {
@@ -81,7 +83,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 0;
   border-bottom-left-radius: 80px;
 }
@@ -386,16 +388,18 @@ main {
   gap: 30px;
 }
 .contacto-conteiner h2 {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 500;
   color: var(--second-White);
 }
 .card-conteiner {
   background-color: var(--second-White);
   padding: 40px;
-  padding-bottom: 30px;
-  border-radius: 15px;
-  max-width: 600px;
+  padding-top: 65px;
+  /* padding-bottom: 30px; */
+  border-radius: 5px;
+  width: 650px;
+  max-width: 700px;
   margin: 0 auto;
 }
 .first-card-conteiner {
@@ -405,7 +409,7 @@ main {
   justify-content: center;
   text-align: center;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .card-conteiner img {
   width: 250px;
@@ -413,7 +417,7 @@ main {
 }
 .first-card-conteiner p {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .second-card-conteiner {
   display: flex;
@@ -428,8 +432,87 @@ main {
   display: block;
   width: 100%;
 }
-.second-card-conteiner label {
+.norm-label {
   font-size: 16px;
   font-weight: 500;
   padding: 10px 0px;
+}
+.second-card-conteiner input,
+.second-card-conteiner select {
+  border: 1px solid var(--morelightGrey);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 15px;
+}
+.second-card-conteiner select option {
+  color: var(--morelightGrey);
+  font-size: 18px;
+}
+.checkbox-card p {
+  padding: 20px 0px;
+}
+.checkbox-novedades {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+}
+.checkbox-novedades input {
+  width: 35px;
+  height: 16px;
+}
+.checkbox-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox-content label {
+  font-weight: 400;
+}
+.button-card {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid var(--darkGreen);
+  background-color: var(--darkGreen);
+  border-radius: 8px;
+}
+.button-card a {
+  color: var(--second-White);
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  text-align: center;
+}
+.footer-contet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.img-footer img {
+  width: 300px;
+  height: auto;
+}
+.redes-footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.redes-footer img {
+  width: 60px;
+  height: auto;
+}
+.copy-footer {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 18px;
 }

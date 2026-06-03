@@ -218,20 +218,26 @@
             </div>
             <div class="second-card-conteiner">
               <form>
-                <label for="nombre">Nombre y apellido *</label>
+                <label for="nombre" class="norm-label"
+                  >Nombre y apellido *</label
+                >
                 <input type="text" id="nombre" placeholder="Tu nombre" />
-                <label for="email">Email *</label>
+                <label for="email" class="norm-label">Email *</label>
                 <input type="email" id="email" placeholder="tu@email.com" />
-                <label for="telefono">Teléfono / whatsapp *</label>
+                <label for="telefono" class="norm-label"
+                  >Teléfono / whatsapp *</label
+                >
                 <input type="tel" id="telefono" placeholder="11 6754 3202" />
-                <label for="evento">¿Cómo preferís que te contactemos? *</label>
+                <label for="evento" class="norm-label"
+                  >¿Cómo preferís que te contactemos? *</label
+                >
                 <select id="evento">
                   <option value="">Tipo de contacto</option>
                   <option value="telefono">Teléfono</option>
                   <option value="whatsapp">Whatsapp</option>
                   <option value="email">Email</option>
                 </select>
-                <label for="tipo">Tipo de evento *</label>
+                <label for="tipo" class="norm-label">Tipo de evento *</label>
                 <select id="tipo">
                   <option value=""></option>
                   <option value="boda">Boda</option>
@@ -244,9 +250,13 @@
                   <option value="egresados">Fiesta de egresados</option>
                   <option value="otros">Otros</option>
                 </select>
-                <label for="fecha">Fecha o mes estimado del evento *</label>
+                <label for="fecha" class="norm-label"
+                  >Fecha o mes estimado del evento *</label
+                >
                 <input type="text" id="fecha" placeholder="Fecha de evento" />
-                <label for="cantidad">Cantidad aproximada de invitados *</label>
+                <label for="cantidad" class="norm-label"
+                  >Cantidad aproximada de invitados *</label
+                >
                 <select id="cantidad">
                   <option value=""></option>
                   <option value="menor">Menos de 50</option>
@@ -254,14 +264,18 @@
                   <option value="alto">100 a 200</option>
                   <option value="mayor">Más de 200</option>
                 </select>
-                <label for="horario">Horario preferido: *</label>
+                <label for="horario" class="norm-label"
+                  >Horario preferido: *</label
+                >
                 <select id="horario">
                   <option value=""></option>
                   <option value="dia">Día</option>
                   <option value="noche">Noche</option>
                   <option value="definit">A definir</option>
                 </select>
-                <label for="conocer">¿Cómo conociste a Los Jazmines? *</label>
+                <label for="conocer" class="norm-label"
+                  >¿Cómo conociste a Los Jazmines? *</label
+                >
                 <select id="conocer">
                   <option value=""></option>
                   <option value="recomendacion">Recomendación</option>
@@ -270,20 +284,63 @@
                   <option value="anterior">Evento anterior</option>
                   <option value="Otro">Otro</option>
                 </select>
-                <label for="">Comentarios o detalles adicionales</label>
+                <label for="" class="norm-label"
+                  >Comentarios o detalles adicionales</label
+                >
                 <input type="text" />
-
-                <p>Deseo recibir novedades y promociones de Los Jazmines*</p>
-                <input type="checkbox" name="Si" id="promociones" />
-                <label for="promociones">Si</label>
-                <input type="checkbox" name="No" id="promociones" />
-                <label for="promociones">No</label>
+                <div class="checkbox-card">
+                  <p>Deseo recibir novedades y promociones de Los Jazmines*</p>
+                  <div class="checkbox-novedades">
+                    <div class="checkbox-content">
+                      <input type="checkbox" name="Si" id="promocion-si" />
+                      <label for="promocion-si">Si</label>
+                    </div>
+                    <div class="checkbox-content">
+                      <input type="checkbox" name="No" id="promocion-no" />
+                      <label for="promocion-no">No</label>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
-            <a href="#">Enviar</a>
+            <div class="button-card">
+              <a href="#">Enviar</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-contet">
+        <div class="img-footer">
+          <img src="./assets/imgs/Logo.jpg" alt="Logo" />
+        </div>
+        <div class="redes-footer">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assets/imgs/footer/instagram.png" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/imgs/footer/facebook.png" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/imgs/footer/linkedin.png" alt="linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy-footer">
+        <p>
+          Copyright — "© 2024 Los Jazmines Eventos. Todos los derechos
+          reservados."
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
