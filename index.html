@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Integrador</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="nav-logo">
         <img src="./assets/imgs/Logo.jpg" alt="logo" class="logo" />
       </div>
-      <div>
+      
+        <label class="label-menu" for="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input class="input-menu" type="checkbox" id="menu-toggle" />
+      </div>
+      
         <ul class="nav-list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#Nosotros">Nosotros</a></li>
           <li><a href="#Servicios">Servicios</a></li>
           <li><a href="#Salones">Salones</a></li>
           <li><a href="#Contacto">Contacto</a></li>
+          <a href="./login.html" class="nav-button">Iniciar Sesión</a>
         </ul>
       </div>
     </header>

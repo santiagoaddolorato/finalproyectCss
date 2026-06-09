@@ -55,12 +55,26 @@ header {
   gap: 4rem;
   margin-right: 15rem;
 }
-.nav-list a {
+.nav-list li a {
   color: var(--darkGreen);
   font-size: 15px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
+.nav-button {
+  background-color: var(--darkGreen);
+  color: var(--second-White);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.label-menu,
+.input-menu {
+  display: none;
+}
+
 /* Hero Section */
 main {
   width: 100%;

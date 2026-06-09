@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* fonts */
+  --font: "EB Garamond";
+  /* colors */
+  --beige: #f3c395ff;
+  --pink: #f8eff2;
+  --lightblue: #d6bcfa;
+  --violet: #757bbd;
+  --White: #f8f2edff;
+  --second-White: #ffffff;
+  --black: #000000;
+  --darkGreen: #055346ff;
+  --lightGreen: #9ae6b4;
+  --morelightGrey: #8d8888;
+  --lightGrey: #353535bd;
+  --darkGrey: #353535ff;
+  --orange: #f6ad55;
+  --yellow: #faf089;
+  --red: #e93d3d;
+  /* background */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--font), sans-serif;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 135px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--black);
+    border: 2px solid var(--darkGreen);
+    border-top: 0;
+    border-right: 0;
+    border-bottom-left-radius: 15px;
+    padding: 17px 0;
+    gap: 25px;
+  }
+  .nav-list a {
+    font-size: 18px;
+  }
+  .label-menu {
+    display: flex;
+    font-size: 30px;
+  }
+  .input-menu {
+    display: none;
+  }
+  .menu-hamburguesa i {
+    height: 20px;
+    width: 25px;
+  }
+  #menu-toggle:checked ~ .nav-list {
+    display: flex;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .nav-list {
+    transform: translateX(110%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media (max-width: 480px) {
+}
