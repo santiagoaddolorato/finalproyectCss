@@ -30,6 +30,7 @@
   font-family: var(--font), sans-serif;
 }
 @media (max-width: 768px) {
+  /* Toggle Menu */
   body {
     overflow-x: hidden;
   }
@@ -72,6 +73,121 @@
     transform: translateX(110%);
     opacity: 0;
     transition: all 0.5s ease-in-out;
+  }
+  /* responsive general */
+
+  .logo {
+    margin-left: 0;
+  }
+  .hero-info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .hero-info h1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .hero-info p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #Nosotros {
+    flex-direction: column;
+    /* gap: 50px; */
+  }
+  .img-nos {
+    width: 100%;
+  }
+  .text-nos {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-nos h2 {
+    font-size: 35px;
+  }
+  .text-nos h1 {
+    font-size: 50px;
+  }
+  .text-nos p {
+    font-size: 20px;
+  }
+  .grid-servicios {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .grid-servicios img {
+    height: 320px;
+  }
+  .cards-descrip {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .cards-descrip img {
+    width: 300px;
+  }
+  .cards-descrip h2 {
+    font-size: 40px;
+  }
+  .text-descrip h1 {
+    font-size: 50px;
+  }
+  .text-descrip p {
+    font-size: 20px;
+  }
+  .text-salones {
+    width: 170%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-salones h1 {
+    font-size: 60px;
+  }
+  .text-salones p {
+    font-size: 20px;
+  }
+  .galeria-conteiner {
+    gap: 70px;
+  }
+  .galeria-conteiner h2 {
+    font-size: 50px;
+  }
+  .img-conteiner {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .img-conteiner img {
+    height: 320px;
+    object-fit: cover;
+  }
+  .ubicacion-conteiner {
+    gap: 30px;
+  }
+  .ubicacion-conteiner h2 {
+    font-size: 50px;
+  }
+  .ubicacion-conteiner p {
+    font-size: 20px;
+  }
+  iframe {
+    width: 640px;
+    height: 450px;
+  }
+  .ubicacion-conteiner a {
+    font-size: 25px;
+  }
+  .img-footer img {
+    display: none;
+  }
+  .footer-contet {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 480px) {

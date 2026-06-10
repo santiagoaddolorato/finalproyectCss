@@ -407,7 +407,6 @@ iframe {
   background: var(--darkGreen);
 }
 .contacto-conteiner {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -424,7 +423,7 @@ iframe {
   background-color: var(--second-White);
   padding: 40px;
   padding-top: 65px;
-  /* padding-bottom: 30px; */
+
   border-radius: 5px;
   width: 650px;
   max-width: 700px;
