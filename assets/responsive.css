@@ -50,6 +50,9 @@
     padding: 17px 0;
     gap: 25px;
   }
+  .nav-list li a {
+    font-size: 20px;
+  }
   .nav-list a {
     font-size: 18px;
   }
@@ -240,8 +243,5 @@
   .card-conteiner {
     width: 90%;
     padding: 30px 20px;
-  }
-  .nav-list li a {
-    font-size: 20px;
   }
 }

@@ -29,7 +29,9 @@
   list-style: none;
   font-family: var(--font), sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Header */
 header {
   background-color: var(--second-White);
