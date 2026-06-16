@@ -76,6 +76,11 @@
   }
   /* responsive general */
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .logo {
     margin-left: 0;
   }
@@ -89,6 +94,9 @@
   .hero-info h1 {
     font-size: 70px;
     font-weight: 600;
+  }
+  .hero-info p {
+    font-size: 20px;
   }
   .hero-info {
     font-size: 20px;
@@ -139,6 +147,20 @@
   .text-descrip p {
     font-size: 20px;
   }
+  .salones-norm {
+    width: 70%;
+  }
+  .card-salones img {
+    height: 300px;
+  }
+  .salones-norm h3 {
+    font-size: 30px;
+    color: var(--darkGreen);
+    margin-bottom: 15px;
+  }
+  .salones-norm p {
+    font-size: 17px;
+  }
   .text-salones {
     width: 170%;
     flex-direction: column;
@@ -147,7 +169,7 @@
     align-items: center;
   }
   .text-salones h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .text-salones p {
     font-size: 20px;
