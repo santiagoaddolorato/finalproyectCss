@@ -77,12 +77,13 @@ header {
   text-align: center;
 }
 .login-text h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   color: var(--darkGreen);
 }
 .login-text p {
-  font-size: 17px;
+  width: 80%;
+  font-size: 20px;
   font-weight: 500;
 }
 .login-form {
@@ -91,7 +92,7 @@ header {
   justify-content: center;
   gap: 10px;
   padding: 30px;
-  width: 70%;
+  width: 100%;
 }
 .norm-label {
   font-size: 20px;
@@ -118,7 +119,7 @@ header {
   color: var(--second-White);
   font-weight: 500;
   font-family: "Monserrat", sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   display: block;
   width: 100%;
   padding: 15px 100px;
@@ -133,4 +134,10 @@ header {
 .login-singup p a {
   color: var(--darkGreen);
   font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .login {
+    padding: 20px;
+  }
 }

@@ -58,7 +58,7 @@ header {
   background-color: var(--pink);
   width: 600px;
   height: 0 auto;
-  padding: 70px 50px;
+  padding: 70px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,12 +75,12 @@ header {
   gap: 30px;
 }
 .signup-title h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 500;
   color: var(--darkGreen);
 }
 .signup-title p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
 }
 .signup-form {
@@ -115,7 +115,7 @@ header {
   color: var(--second-White);
   font-weight: 500;
   font-family: "Monserrat", sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   width: 100%;
   padding: 15px 100px;
   text-align: center;
@@ -129,4 +129,9 @@ header {
 .signup-login p a {
   color: var(--darkGreen);
   font-weight: 600;
+}
+@media (max-width: 480px) {
+  .signup {
+    padding: 30px;
+  }
 }

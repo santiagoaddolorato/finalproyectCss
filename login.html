@@ -15,35 +15,38 @@
       </div>
     </header>
     <main>
-      <section class="login"></section>
-      <div class="login-container">
-        <div class="login-text">
-          <h1>Iniciar Sesión</h1>
-          <p>Completa tus datos para poder ingresar a nuestra pagina web.</p>
+      <section class="login">
+        <div class="login-container">
+          <div class="login-text">
+            <h1>Iniciar Sesión</h1>
+            <p>Completa tus datos para poder ingresar a nuestra pagina web.</p>
+          </div>
+          <div class="login-form">
+            <label class="norm-label" for="email">Ingrese su Email</label>
+            <input
+              class="norm-input"
+              type="text"
+              id="email"
+              placeholder="tu@email.com"
+            />
+            <label class="norm-label" for="password"
+              >Ingrese su contraseña</label
+            >
+            <input
+              class="norm-input"
+              type="password"
+              id="password"
+              placeholder="password"
+            />
+          </div>
+          <div class="login-button">
+            <a href="./index.html">Iniciar sesión</a>
+          </div>
+          <div class="login-singup">
+            <p>No tenes cuenta? <a href="./registro.html">Registrate</a></p>
+          </div>
         </div>
-        <div class="login-form">
-          <label class="norm-label" for="email">Ingrese su Email</label>
-          <input
-            class="norm-input"
-            type="text"
-            id="email"
-            placeholder="tu@email.com"
-          />
-          <label class="norm-label" for="password">Ingrese su contraseña</label>
-          <input
-            class="norm-input"
-            type="password"
-            id="password"
-            placeholder="password"
-          />
-        </div>
-        <div class="login-button">
-          <a href="./index.html">Iniciar sesión</a>
-        </div>
-        <div class="login-singup">
-          <p>No tenes cuenta? <a href="./registro.html">Registrate</a></p>
-        </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
