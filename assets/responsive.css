@@ -90,7 +90,7 @@
     font-size: 70px;
     font-weight: 600;
   }
-  .hero-info p {
+  .hero-info {
     font-size: 20px;
     font-weight: 600;
   }
@@ -191,4 +191,35 @@
   }
 }
 @media (max-width: 480px) {
+  .hero-info h1 {
+    font-size: 60px;
+  }
+  .hero-info p {
+    font-size: 17px;
+    padding: 0 3rem;
+  }
+  .text-descrip h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-descrip p {
+    padding: 2rem;
+  }
+  .cards-descrip {
+    padding: 0;
+  }
+  iframe {
+    width: 400px;
+    height: 450px;
+  }
+  .card-conteiner {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  .nav-list li a {
+    font-size: 20px;
+  }
 }
